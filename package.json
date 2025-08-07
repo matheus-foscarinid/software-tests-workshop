@@ -1,0 +1,20 @@
+{
+  "type": "module",
+  "name": "software-tests-workshop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "test:coverage": "jest --coverage"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/preset-env": "^7.28.0",
+    "@types/jest": "^30.0.0",
+    "babel-jest": "^30.0.5",
+    "jest": "^30.0.5"
+  }
+}
