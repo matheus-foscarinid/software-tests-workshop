@@ -1,3 +1,5 @@
+// Nivel Hard
+
 // Filtra usuários ativos maiores de idade
 export const filterActiveAdults = (users) => {
   // users: array de objetos { nome, idade, ativo }

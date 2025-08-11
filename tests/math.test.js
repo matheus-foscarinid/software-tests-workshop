@@ -2,39 +2,108 @@ import { add, subtract, multiply, divide } from '../src/math';
 
 describe('add', () => {
   test('soma dois números positivos', () => {
-    expect(add(2, 3)).toBe(5);
+    // Preparar
+    const num1 = 2;
+    const num2 = 3;
+
+    // Agir
+    const resultado = add(num1, num2);
+
+    // Verificar
+    expect(resultado).toBe(5);
   });
   test('soma números negativos', () => {
-    expect(add(-2, -3)).toBe(-5);
+    // Preparar
+    const num1 = -2;
+    const num2 = -3;
+
+    // Agir
+    const resultado = add(num1, num2);
+
+    // Verificar
+    expect(resultado).toBe(-5);
   });
   test('soma com zero', () => {
-    expect(add(0, 5)).toBe(5);
+    // Preparar
+    const num1 = 0;
+    const num2 = 5;
+
+    // Agir
+    const resultado = add(num1, num2);
+
+    // Verificar
+    expect(resultado).toBe(5);
   });
 });
 
 describe('subtract', () => {
   test('subtrai dois números', () => {
-    expect(subtract(5, 3)).toBe(2);
+    // Preparar
+    const num1 = 5;
+    const num2 = 3;
+
+    // Agir
+    const resultado = subtract(num1, num2);
+
+    // Verificar
+    expect(resultado).toBe(2);
   });
   test('subtrai negativos', () => {
-    expect(subtract(-2, -3)).toBe(1);
+    // Preparar
+    const num1 = -2;
+    const num2 = -3;
+
+    // Agir
+    const resultado = subtract(num1, num2);
+
+    // Verificar
+    expect(resultado).toBe(1);
   });
 });
 
 describe('multiply', () => {
   test('multiplica dois números', () => {
-    expect(multiply(2, 3)).toBe(6);
+    // Preparar
+    const num1 = 2;
+    const num2 = 3;
+
+    // Agir
+    const resultado = multiply(num1, num2);
+
+    // Verificar
+    expect(resultado).toBe(6);
   });
   test('multiplica por zero', () => {
-    expect(multiply(5, 0)).toBe(0);
+    // Preparar
+    const num1 = 5;
+    const num2 = 0;
+
+    // Agir
+    const resultado = multiply(num1, num2);
+
+    // Verificar
+    expect(resultado).toBe(0);
   });
 });
 
 describe('divide', () => {
   test('divide dois números', () => {
-    expect(divide(6, 3)).toBe(2);
+    // Preparar
+    const num1 = 6;
+    const num2 = 3;
+
+    // Agir
+    const resultado = divide(num1, num2);
+
+    // Verificar
+    expect(resultado).toBe(2);
   });
   test('lança erro ao dividir por zero', () => {
-    expect(() => divide(5, 0)).toThrow('Divisão por zero não é permitida');
+    // Preparar
+    const num1 = 5;
+    const num2 = 0;
+
+    // Agir e Verificar
+    expect(() => divide(num1, num2)).toThrow('Divisão por zero não é permitida');
   });
 });

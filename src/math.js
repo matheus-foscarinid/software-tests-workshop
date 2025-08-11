@@ -1,3 +1,5 @@
+// Nível Fácil
+
 // Soma dois números
 export const add = (a, b) => {
   return a + b;

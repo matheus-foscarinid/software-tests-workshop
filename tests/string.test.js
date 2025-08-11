@@ -3,24 +3,66 @@ import { isPalindrome, capitalize } from '../src/string';
 
 describe('isPalindrome', () => {
   test('detecta palíndromo', () => {
-    expect(isPalindrome('arara')).toBe(true);
+    // Preparar
+    const texto = 'arara';
+
+    // Agir
+    const resultado = isPalindrome(texto);
+
+    // Verificar
+    expect(resultado).toBe(true);
   });
   test('detecta não-palíndromo', () => {
-    expect(isPalindrome('teste')).toBe(false);
+    // Preparar
+    const texto = 'teste';
+
+    // Agir
+    const resultado = isPalindrome(texto);
+
+    // Verificar
+    expect(resultado).toBe(false);
   });
   test('ignora maiúsculas e caracteres especiais', () => {
-    expect(isPalindrome('Ame a ema')).toBe(true);
+    // Preparar
+    const texto = 'Ame a ema';
+
+    // Agir
+    const resultado = isPalindrome(texto);
+
+    // Verificar
+    expect(resultado).toBe(true);
   });
 });
 
 describe('capitalize', () => {
   test('capitaliza a primeira letra', () => {
-    expect(capitalize('teste')).toBe('Teste');
+    // Preparar
+    const texto = 'teste';
+
+    // Agir
+    const resultado = capitalize(texto);
+
+    // Verificar
+    expect(resultado).toBe('Teste');
   });
   test('não altera se já está capitalizado', () => {
-    expect(capitalize('Teste')).toBe('Teste');
+    // Preparar
+    const texto = 'Teste';
+
+    // Agir
+    const resultado = capitalize(texto);
+
+    // Verificar
+    expect(resultado).toBe('Teste');
   });
   test('lida com strings vazias', () => {
-    expect(capitalize('')).toBe('');
+    // Preparar
+    const texto = '';
+
+    // Agir
+    const resultado = capitalize(texto);
+
+    // Verificar
+    expect(resultado).toBe('');
   });
 });
